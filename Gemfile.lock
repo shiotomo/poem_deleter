@@ -8,6 +8,7 @@ GEM
       unf (>= 0.0.5, < 1.0.0)
     dotenv (2.7.5)
     equalizer (0.0.11)
+    hashie (3.6.0)
     http (3.3.0)
       addressable (~> 2.3)
       http-cookie (~> 1.0)
@@ -20,10 +21,30 @@ GEM
     memoizable (0.4.2)
       thread_safe (~> 0.3, >= 0.3.1)
     multipart-post (2.1.1)
+    mustermann (1.0.3)
     naught (1.1.0)
+    oauth (0.5.4)
+    omniauth (1.9.0)
+      hashie (>= 3.4.6, < 3.7.0)
+      rack (>= 1.6.2, < 3)
+    omniauth-oauth (1.1.0)
+      oauth
+      omniauth (~> 1.0)
+    omniauth-twitter (1.4.0)
+      omniauth-oauth (~> 1.1)
+      rack
     public_suffix (3.1.1)
+    rack (2.0.7)
+    rack-protection (2.0.5)
+      rack
     simple_oauth (0.3.1)
+    sinatra (2.0.5)
+      mustermann (~> 1.0)
+      rack (~> 2.0)
+      rack-protection (= 2.0.5)
+      tilt (~> 2.0)
     thread_safe (0.3.6)
+    tilt (2.0.9)
     twitter (6.2.0)
       addressable (~> 2.3)
       buftok (~> 0.2.0)
@@ -44,6 +65,9 @@ PLATFORMS
 
 DEPENDENCIES
   dotenv
+  omniauth
+  omniauth-twitter
+  sinatra
   twitter
 
 BUNDLED WITH
